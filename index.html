@@ -92,6 +92,27 @@
     </form>
   </main>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js">
+document.getElementById("admissionForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+
+  fetch("https://script.google.com/macros/s/AKfycbyaPmlUCrQfs9Uv0iGNnK2w-pTg_Zf5y5OvKlCvXj_FoNpcO3TTklgKYfLC9_jjZjslIA/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert("✅ Data submitted successfully!");
+    this.reset(); // فارم خالی کر دو
+  })
+  .catch(error => {
+    alert("❌ Error submitting form!");
+    console.error(error);
+  });
+});
+</script>
+
 </body>
 </html>
