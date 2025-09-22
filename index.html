@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ur">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admission Form - Academy</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Admission Form</h1>
+    <p class="desc">براہِ کرم فارم مکمل کریں۔ Required فیلڈز لازماً پر کریں۔</p>
+
+    <form id="admissionForm">
+      <label>Student Name <span class="req">*</span>
+        <input name="studentName" type="text" required />
+      </label>
+
+      <label>Father's Name <span class="req">*</span>
+        <input name="fatherName" type="text" required />
+      </label>
+
+      <label>Date of Birth <span class="req">*</span>
+        <input name="dob" type="date" required />
+      </label>
+
+      <label>Gender <span class="req">*</span>
+        <select name="gender" required>
+          <option value="">--Select--</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>CNIC / B-Form <span class="req">*</span>
+        <input name="cnic" type="text" inputmode="numeric" required />
+      </label>
+
+      <label>Contact Number <span class="req">*</span>
+        <input name="phone" type="tel" required />
+      </label>
+
+      <label>Email Address
+        <input name="email" type="email" />
+      </label>
+
+      <label>Address <span class="req">*</span>
+        <textarea name="address" rows="3" required></textarea>
+      </label>
+
+      <label>Highest Qualification <span class="req">*</span>
+        <select name="qualification" required>
+          <option value="">--Select--</option>
+          <option>Matric</option>
+          <option>Intermediate</option>
+          <option>Graduation</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>Name of Last Institution
+        <input name="lastInstitution" type="text" />
+      </label>
+
+      <label>Year of Completion
+        <input name="yearCompletion" type="text" />
+      </label>
+
+      <label>Course Name <span class="req">*</span>
+        <input name="courseName" type="text" required />
+      </label>
+
+      <label>Batch/Timing
+        <input name="batchTiming" type="text" />
+      </label>
+
+      <label>Emergency Contact Name
+        <input name="emergencyName" type="text" />
+      </label>
+
+      <label>Emergency Contact Number
+        <input name="emergencyPhone" type="tel" />
+      </label>
+
+      <div class="actions">
+        <button type="submit">Submit</button>
+        <button type="button" id="downloadCsv">Download CSV (Local Backup)</button>
+      </div>
+
+      <p id="status" class="status"></p>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
