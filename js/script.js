@@ -1,6 +1,6 @@
 // ====== CONFIG ======
 // یہاں اپنا Google Apps Script Web App URL لگائیں (نیچے steps میں بتاؤں گا کیسے حاصل کرنا ہے)
-const GAS_WEBAPP_URL = "https://script.google.com/macros/s/-----YOUR-DEPLOYED-URL-----/exec";
+const GAS_WEBAPP_URL = "https://script.google.com/d/1JVFm8laktw6alo9ArN8O6PVZR-6znpAnqT3Osh4S5PT2yMzOzY3a9Gby/edit?usp=sharing";
 
 const form = document.getElementById('admissionForm');
 const statusEl = document.getElementById('status');
