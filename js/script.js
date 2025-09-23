@@ -3,6 +3,45 @@
 const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzy93pzySoJiseKOdsj79jWAQ5d__hy0lFiN042bI-H7T1rXmhtWrLgHcX2c1p0nm6b/exec";
 
 
+
+
+
+
+
+
+
+document.getElementById("admissionForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+
+  fetch("https://script.google.com/macros/s/AKfycbzy93pzySoJiseKOdsj79jWAQ5d__hy0lFiN042bI-H7T1rXmhtWrLgHcX2c1p0nm6b/exe", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert("✅ Data submitted successfully!");
+    this.reset();
+  })
+  .catch(error => {
+    alert("❌ Error submitting form!");
+    console.error(error);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 const form = document.getElementById('admissionForm');
 const statusEl = document.getElementById('status');
 const downloadBtn = document.getElementById('downloadCsv');
