@@ -1,6 +1,6 @@
 // ======E CONFIG ======
 // یہاں اپنا Google Apps Script Web App URL لگائیں (نیچے steps میں بتاؤں گا کیسے حاصل کرنا ہے)
-const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyaPmlUCrQfs9Uv0iGNnK2w-pTg_Zf5y5OvKlCvXj_FoNpcO3TTklgKYfLC9_jjZjslIA/exec";
+const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzy93pzySoJiseKOdsj79jWAQ5d__hy0lFiN042bI-H7T1rXmhtWrLgHcX2c1p0nm6b/exec";
 
 
 const form = document.getElementById('admissionForm');
