@@ -11,6 +11,7 @@ const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyaPmlUCrQfs9Uv0
 
 
 
+
 document.getElementById("admissionForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
